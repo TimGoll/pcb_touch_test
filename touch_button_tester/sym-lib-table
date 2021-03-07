@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ttp223)(type Legacy)(uri ${KIPRJMOD}/lib/ttp223.lib)(options "")(descr ""))
+  (lib (name touch_button)(type Legacy)(uri ${KIPRJMOD}/lib/touch_button.lib)(options "")(descr ""))
+)

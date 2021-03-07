@@ -1,0 +1,133 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ttp223:ttp223 U?
+U 1 1 6044DB90
+P 5400 2800
+F 0 "U?" H 5400 3265 50  0000 C CNN
+F 1 "ttp223" H 5400 3174 50  0000 C CNN
+F 2 "MODULE" H 5400 2800 50  0001 C CNN
+F 3 "DOCUMENTATION" H 5400 2800 50  0001 C CNN
+	1    5400 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L touch_button:touch_button U?
+U 1 1 6044FFBF
+P 5550 1650
+F 0 "U?" H 5608 1965 50  0000 C CNN
+F 1 "touch_button" H 5608 1874 50  0000 C CNN
+F 2 "" H 5550 1650 50  0001 C CNN
+F 3 "" H 5550 1650 50  0001 C CNN
+	1    5550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J?
+U 1 1 60451A9C
+P 1200 2000
+F 0 "J?" H 1300 2450 50  0000 C CNN
+F 1 "I/O" H 1300 2350 50  0000 C CNN
+F 2 "" H 1200 2000 50  0001 C CNN
+F 3 "~" H 1200 2000 50  0001 C CNN
+	1    1200 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 1400 2000 2    50   Input ~ 0
+t1
+Text GLabel 1400 2100 2    50   Input ~ 0
+t2
+Text GLabel 1400 2200 2    50   Input ~ 0
+t3
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60455B32
+P 1950 750
+F 0 "#FLG?" H 1950 825 50  0001 C CNN
+F 1 "PWR_FLAG" H 1950 923 50  0000 C CNN
+F 2 "" H 1950 750 50  0001 C CNN
+F 3 "~" H 1950 750 50  0001 C CNN
+	1    1950 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60456214
+P 2400 750
+F 0 "#PWR?" H 2400 600 50  0001 C CNN
+F 1 "+5V" H 2415 923 50  0000 C CNN
+F 2 "" H 2400 750 50  0001 C CNN
+F 3 "" H 2400 750 50  0001 C CNN
+	1    2400 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 604572F5
+P 1950 900
+F 0 "#PWR?" H 1950 650 50  0001 C CNN
+F 1 "GND" H 1955 727 50  0000 C CNN
+F 2 "" H 1950 900 50  0001 C CNN
+F 3 "" H 1950 900 50  0001 C CNN
+	1    1950 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 900  1950 750 
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60457D73
+P 2400 900
+F 0 "#FLG?" H 2400 975 50  0001 C CNN
+F 1 "PWR_FLAG" H 2400 1073 50  0000 C CNN
+F 2 "" H 2400 900 50  0001 C CNN
+F 3 "~" H 2400 900 50  0001 C CNN
+	1    2400 900 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 900  2400 750 
+$Comp
+L power:GND #PWR?
+U 1 1 6045A97B
+P 1650 1950
+F 0 "#PWR?" H 1650 1700 50  0001 C CNN
+F 1 "GND" H 1655 1777 50  0000 C CNN
+F 2 "" H 1650 1950 50  0001 C CNN
+F 3 "" H 1650 1950 50  0001 C CNN
+	1    1650 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1950 1650 1900
+Wire Wire Line
+	1650 1900 1400 1900
+$Comp
+L power:+5V #PWR?
+U 1 1 6045B5D5
+P 1650 1750
+F 0 "#PWR?" H 1650 1600 50  0001 C CNN
+F 1 "+5V" H 1665 1923 50  0000 C CNN
+F 2 "" H 1650 1750 50  0001 C CNN
+F 3 "" H 1650 1750 50  0001 C CNN
+	1    1650 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1750 1650 1800
+Wire Wire Line
+	1650 1800 1400 1800
+$EndSCHEMATC
